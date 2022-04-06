@@ -20,19 +20,19 @@ namespace BloodBankManagementSystem.Repositories
         {
             _context.BloodDonationCamps.Add(bloodDonationCamp);
             _context.SaveChanges();
-            throw new NotImplementedException();
+          
         }
 
         public List<BloodDonationCamp> GetAllBloodDonationCamps()
         {
             return _context.BloodDonationCamps.ToList();
-            throw new NotImplementedException();
+          
         }
 
         public BloodDonationCamp GetBloodDonationStartDate(int id)
         {
             return _context.BloodDonationCamps.Find(id);
-            throw new NotImplementedException();
+           
         }
     }
 }

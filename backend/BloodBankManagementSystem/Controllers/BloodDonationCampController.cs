@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BloodBankManagementSystem.Controllers
 {
-    [Route("api/[controller")]
+    [Route("api/[controller]")]
     [ApiController]
     public class BloodDonationCampController:ControllerBase
     {
@@ -19,8 +19,9 @@ namespace BloodBankManagementSystem.Controllers
         {
             _repository = repository;
         }
+
         [HttpGet]
-        [Route("Get BloodDonationCamps")]
+        [Route("GetAllBloodDonationCamps")]
         public IActionResult Get()
         {
             List<BloodDonationCamp> bloodDonationCamps = _repository.GetAllBloodDonationCamps();
