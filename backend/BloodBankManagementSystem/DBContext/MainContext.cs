@@ -14,7 +14,7 @@ namespace BloodBankManagementSystem.DBContext
         public MainContext(DbContextOptions<MainContext> options) : base(options)
         { 
         }
-            public DbSet<BloodDonationCamp> BloodDonationCamps{get;set;}
+        public DbSet<BloodDonationCamp> BloodDonationCamps{get;set;}
         public DbSet<BloodDonor> BloodDonors { get; set; }
         public DbSet<BloodDonorDonation> BloodDonorDonations { get; set; }
 
