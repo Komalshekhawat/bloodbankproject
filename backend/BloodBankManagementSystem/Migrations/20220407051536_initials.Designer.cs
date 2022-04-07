@@ -4,14 +4,16 @@ using BloodBankManagementSystem.DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BloodBankManagementSystem.Migrations
 {
     [DbContext(typeof(MainContext))]
-    partial class MainContextModelSnapshot : ModelSnapshot
+    [Migration("20220407051536_initials")]
+    partial class initials
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -107,31 +109,6 @@ namespace BloodBankManagementSystem.Migrations
                     b.HasIndex("BloodDonorID");
 
                     b.ToTable("BloodDonorDonations");
-                });
-
-            modelBuilder.Entity("BloodBankManagementSystem.Entities.Hospital", b =>
-                {
-                    b.Property<int>("HospitalID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ContactNo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HospitalName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("HospitalID");
-
-                    b.ToTable("Hospital");
                 });
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodDonorDonation", b =>
