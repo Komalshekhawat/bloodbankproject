@@ -5978,19 +5978,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dheer\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\bloodbank_project\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
       "projectName": "BloodBankManagementSystem",
-      "projectPath": "D:\\bloodbank_project\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\dheer\\.nuget\\packages\\",
-      "outputPath": "D:\\bloodbank_project\\backend\\BloodBankManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6041,12 +6041,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
