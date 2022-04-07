@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\backend",
-    "\\backend\\BloodBankManagementSystem",
-    "\\backend\\BloodBankManagementSystem\\Entities",
-    "\\backend\\BloodBankManagementSystem\\Migrations",
-    "\\backend\\BloodBankManagementSystem\\obj"
+    ""
   ],
-  "SelectedNode": "\\backend\\BloodBankManagementSystem\\Controllers",
+  "SelectedNode": "\\BloodBankManagementSystem.sln",
   "PreviewInSolutionExplorer": false
 }

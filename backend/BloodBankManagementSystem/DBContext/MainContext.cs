@@ -18,6 +18,8 @@ namespace BloodBankManagementSystem.DBContext
         public DbSet<BloodDonor> BloodDonors { get; set; }
         public DbSet<BloodDonorDonation> BloodDonorDonations { get; set; }
 
+        public DbSet<BloodInventory> BloodInventories { get; set; }
+
 
 
     }
