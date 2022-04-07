@@ -31,10 +31,13 @@ namespace BloodBankManagementSystem
         {
 
             services.AddControllers();
-            services.AddDbContext<MainContext>(item => item.UseSqlServer(Configuration.GetConnectionString("MyDBconn")));
+            services.AddDbContext<MainContext>(item => item.UseSqlServer(Configuration.GetConnectionString("MyDBConn")));
             services.AddScoped<IBloodDonationCamp, BloodDonationCampRepo>();
             services.AddScoped<IBloodDonorRepository, BloodDonorRepository>();
             services.AddScoped<IBloodInventoryRepository, BloodInventoryRepository>();
+            services.AddScoped<IHospitalRepository, HospitalRepository>();
+            services.AddScoped<IBloodBankRepository, BloodBankRepository>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BloodBankManagementSystem", Version = "v1" });

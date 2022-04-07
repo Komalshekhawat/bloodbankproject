@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BloodBankManagementSystem.Entities;
-using System.Collections.Generic;
-using System.Linq;
+
 using BloodBankManagementSystem.DBContext;
 
 namespace BloodBankManagementSystem.Repositories

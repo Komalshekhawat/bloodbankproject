@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodBankManagementSystem.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20220407051536_initials")]
-    partial class initials
+    [Migration("20220407130333_final")]
+    partial class final
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,39 @@ namespace BloodBankManagementSystem.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.13")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodBank", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BloodBankId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BloodBankName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("BloodUnits")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ContactNumber")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Password")
+                        .HasColumnType("int");
+
+                    b.Property<string>("city")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("BloodBank");
+                });
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodDonationCamp", b =>
                 {
@@ -109,6 +142,57 @@ namespace BloodBankManagementSystem.Migrations
                     b.HasIndex("BloodDonorID");
 
                     b.ToTable("BloodDonorDonations");
+                });
+
+            modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodInventory", b =>
+                {
+                    b.Property<int>("BloodInventoryID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("BloodBankID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("BloodGroup")
+                        .IsRequired()
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
+
+                    b.Property<DateTime>("ExpiryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NumberofBottles")
+                        .HasColumnType("int");
+
+                    b.HasKey("BloodInventoryID");
+
+                    b.ToTable("BloodInventories");
+                });
+
+            modelBuilder.Entity("BloodBankManagementSystem.Entities.Hospital", b =>
+                {
+                    b.Property<int>("HospitalID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactNo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HospitalName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HospitalID");
+
+                    b.ToTable("Hospital");
                 });
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodDonorDonation", b =>
