@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodBankManagementSystem.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20220407051536_initials")]
-    partial class initials
+    [Migration("20220407092527_cs")]
+    partial class cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -109,6 +109,31 @@ namespace BloodBankManagementSystem.Migrations
                     b.HasIndex("BloodDonorID");
 
                     b.ToTable("BloodDonorDonations");
+                });
+
+            modelBuilder.Entity("BloodBankManagementSystem.Entities.Hospital", b =>
+                {
+                    b.Property<int>("HospitalID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactNo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HospitalName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HospitalID");
+
+                    b.ToTable("Hospital");
                 });
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodDonorDonation", b =>
