@@ -5978,19 +5978,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\K RESHMA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\K RESHMA\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
       "projectName": "BloodBankManagementSystem",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\K RESHMA\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\K RESHMA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\K RESHMA\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\K RESHMA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6049,7 +6049,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
