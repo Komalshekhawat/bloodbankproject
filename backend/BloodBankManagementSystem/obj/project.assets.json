@@ -5978,19 +5978,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\vikas reddy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\vikas reddy\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
       "projectName": "BloodBankManagementSystem",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\vikas reddy\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\BloodBankManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\vikas reddy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vikas reddy\\source\\repos\\bloodbankproject\\backend\\BloodBankManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vikas reddy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
