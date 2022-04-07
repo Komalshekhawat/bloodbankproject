@@ -8,12 +8,12 @@ using BloodBankManagementSystem.DBContext;
 namespace BloodBankManagementSystem.Repositories
 { 
 
-    public class HospitaRepository : IHospitalRepository
+    public class HospitalRepository : IHospitalRepository
 {
 
     private MainContext _context = null;
     //Injecting context class to the Hospital Repository Using DI 
-    public HospitaRepository(MainContext context)
+    public HospitalRepository(MainContext context)
     {
         _context = context;
     }
