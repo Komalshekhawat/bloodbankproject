@@ -1,0 +1,23 @@
+<p>viewallblooddonationcamps works!</p>
+<div>
+  <table>
+    <tr>
+      <th>bloodDonationCampID</th>
+      <th>campName</th>
+      <th>adress</th>
+      <th>city</th>
+      <th>bloodBankID</th>
+      <th>campStartDate</th>
+      <th>campEndDate</th>
+    </tr>
+    <tr *ngFor="let item of blooddonationcamps">
+      <td>{{item.bloodDonationCampId}}</td>
+      <td>{{item.campName}}</td>
+      <td>{{item.adress}}</td>
+      <td>{{item.city}}</td>
+      <td>{{item.bloodBankId}}</td>
+      <td>{{item.campStartDate}}</td>
+      <td>{{item.campEndDate}}</td>
+    </tr>
+  </table>
+</div>

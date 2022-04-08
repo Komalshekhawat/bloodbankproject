@@ -2,11 +2,11 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-import { BloodDonationCamp } from "src/app/Models/blood-donation-camp";
+
 
 export const environment = {
   production: false,
-  BloodDonationCamp_api:'https://localhost:44309/api/'
+  BloodDonationCamp_api:'https://localhost:44309/api/BloodDonationCamp/'
 };
 
 /*

@@ -37,7 +37,8 @@ namespace BloodBankManagementSystem
             services.AddScoped<IBloodInventoryRepository, BloodInventoryRepository>();
             services.AddScoped<IHospitalRepository, HospitalRepository>();
             services.AddScoped<IBloodBankRepository, BloodBankRepository>();
-
+            //enable cors
+            services.AddCors(c => c.AddPolicy("CorsOrigin", policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BloodBankManagementSystem", Version = "v1" });
@@ -57,6 +58,7 @@ namespace BloodBankManagementSystem
             
 
             app.UseRouting();
+            app.UseCors("CorsOrigin");
 
             app.UseAuthorization();
 

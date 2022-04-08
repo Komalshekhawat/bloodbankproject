@@ -28,9 +28,9 @@ namespace BloodBankManagementSystem.Repositories
           
         }
 
-        public BloodDonationCamp GetBloodDonationStartDate(int id)
+        public DateTime GetBloodDonationStartDate(int id)
         {
-            return _context.BloodDonationCamps.Find(id);
+            return _context.BloodDonationCamps.Find(id).CampStartDate;
            
         }
     }

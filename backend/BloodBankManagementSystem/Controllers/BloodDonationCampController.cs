@@ -33,10 +33,12 @@ namespace BloodBankManagementSystem.Controllers
 
         public IActionResult Get(int id)
         {
+            
             try
             {
-                BloodDonationCamp bloodDonationCamp = _repository.GetBloodDonationStartDate(id);
-                if (bloodDonationCamp != null)
+                DateTime bloodDonationCamp = _repository.GetBloodDonationStartDate(id);
+               
+                if (bloodDonationCamp !=DateTime.Now )
                     return Ok(bloodDonationCamp);
                 else
                     return Content("Invalid Id");

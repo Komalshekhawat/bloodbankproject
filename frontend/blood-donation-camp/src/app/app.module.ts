@@ -3,20 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
+import {HttpClientModule} from '@angular/common/http';
 
-import {HttpClient} from '@angular/common/http'
+
+import { BlooddonationcampService } from './Services/blooddonationcamp.service';
+import { ViewallblooddonationcampsComponent } from './Components/viewallblooddonationcamps/viewallblooddonationcamps.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ViewallblooddonationcampsComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClient
+    HttpClientModule,
+    CommonModule,
+    BrowserModule,
+    
   ],
-  providers: [],
+  providers: [BlooddonationcampService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,7 +9,7 @@ namespace BloodBankManagementSystem.Repositories
     public interface IBloodDonationCamp
     {
         void AddBloodDonationCamp(BloodDonationCamp bloodDonationCamp); //to arrange new camp and add details of camp
-        BloodDonationCamp GetBloodDonationStartDate( int id); //to send the start date so that user can get edit option
+       DateTime GetBloodDonationStartDate( int id); //to send the start date so that user can get edit option
 
         List<BloodDonationCamp> GetAllBloodDonationCamps();
     }
