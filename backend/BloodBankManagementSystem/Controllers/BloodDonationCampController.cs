@@ -63,7 +63,24 @@ namespace BloodBankManagementSystem.Controllers
             }
 
             }
+        [HttpPut]
+        [Route("EditBloodDonationCamp")]
+        public IActionResult EditBloodDonationCamp(BloodDonationCamp bloodDonationCamp)
+        {
+            try
+            {
+                _repository.EditBloodDonationCamp(bloodDonationCamp);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
 
-
+                return BadRequest(ex.Message);
+            }
         }
+
+
+
+
+    }
     }

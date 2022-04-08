@@ -21,4 +21,7 @@ export class BlooddonationcampService {
     return this.http.post(this.BloodDonationCamp_api+'AddBloodDonationCamp',item);
 
   }
+  editBloodDonationCamp(item:BloodDonationCamp):Observable<any>{
+    return this.http.put(this.BloodDonationCamp_api+'EditBloodDonationCamp',item);
+  }
 }

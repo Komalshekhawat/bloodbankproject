@@ -33,5 +33,11 @@ namespace BloodBankManagementSystem.Repositories
             return _context.BloodDonationCamps.Find(id).CampStartDate;
            
         }
+        public void EditBloodDonationCamp(BloodDonationCamp bloodDonationCamp)
+        {
+            _context.BloodDonationCamps.Update(bloodDonationCamp);
+            _context.SaveChanges();
+        }
+
     }
 }

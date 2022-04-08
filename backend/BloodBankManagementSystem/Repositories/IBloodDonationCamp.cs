@@ -12,5 +12,7 @@ namespace BloodBankManagementSystem.Repositories
        DateTime GetBloodDonationStartDate( int id); //to send the start date so that user can get edit option
 
         List<BloodDonationCamp> GetAllBloodDonationCamps();
+
+        void EditBloodDonationCamp(BloodDonationCamp bloodDonationCamp);
     }
 }
