@@ -1,1 +1,40 @@
 <p>addblooddonordetails works!</p>
+<div>
+    <table>
+      <tr>
+        <td>Blood donor id</td>
+        <td><input type="number" name="" id="" [(ngModel)]="blooddonor.bloodDonorId"></td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" name="" id="" [(ngModel)]="blooddonor.firstName"></td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td><input type="text" name="" id="" [(ngModel)]="blooddonor.lastName"></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><input type="text" name="" id="" [(ngModel)]="blooddonor.address"></td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td><input type="text" name="" id="" [(ngModel)]="blooddonor.city"></td>
+      </tr>
+      <tr>
+        <td>Mobile No</td>
+        <td><input type="number" name="" id="" [(ngModel)]="blooddonor.mobileNo"></td>
+      </tr>
+      <tr>
+        <td>blood group</td>
+        <td><input type="text" name="" id="" [(ngModel)]="blooddonor.bloodGroup"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button (click)="AddBloodDonor()">Add</button>
+
+          
+        </td>
+      </tr>
+    </table>
+  </div>

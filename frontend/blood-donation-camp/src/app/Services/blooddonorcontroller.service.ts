@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { BloodDonor } from 'src/app/Models/blood-donor';
+import { BloodDonor } from '../Models/blood-donor';
 import { BloodDonorDonation } from 'src/app/Models/blood-donor-donation';
 @Injectable({
   providedIn: 'root'
 })
-export class BlooddonorService {
+export class BlooddonorcontrollerService {
+ 
   blood_donor_api=environment.blood_donor_api
   constructor(private http:HttpClient) { }
   

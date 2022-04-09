@@ -1,1 +1,16 @@
-<p>deleteblooddonordetails works!</p>
+<div>
+    <table>
+        <tr>
+            <td>Enter blood donor id</td>
+            <td><input type="number" name="" id="" [(ngModel)]="blooddonor.bloodDonorId"></td>
+        </tr>
+        <tr>
+            <button (click)="DeleteBloodDonor()">enter</button>
+            </tr>
+            <tr>
+              <td colspan="1">
+                {{errMsg}}
+              </td>
+            </tr>
+    </table>
+</div>
