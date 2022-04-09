@@ -27,9 +27,9 @@ namespace BloodBankManagementSystem.Repositories
             _context.SaveChanges();
         }
 
-        public void RemoveBloodBank(string BloodBankName)
+        public void RemoveBloodBank(int UserId)
         {
-            BloodBank bloodBank = _context.BloodBanks.Find(BloodBankName);
+            BloodBank bloodBank = _context.BloodBanks.Find(UserId);
             _context.BloodBanks.Remove(bloodBank);
             _context.SaveChanges();
         }
@@ -40,9 +40,6 @@ namespace BloodBankManagementSystem.Repositories
             _context.SaveChanges();
         }
 
-        public BloodBank GetBloodBank(string BloodBankName)
-        {
-            return _context.BloodBanks.Find(BloodBankName);
-        }
+      
     }
 }

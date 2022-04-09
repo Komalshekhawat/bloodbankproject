@@ -10,9 +10,8 @@ namespace BloodBankManagementSystem.Entities
     public class Hospital
     {
         [Key]
-        //Intializing Properties Of Hospital
         public int HospitalID { get; set; }
-        [Required]
+       
         public string HospitalName { get; set; }
         public string Address { get; set; }
         public string City { get; set; }

@@ -29,8 +29,8 @@ namespace BloodBankManagementSystem.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("BloodBankId")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("BloodBankId")
+                        .HasColumnType("int");
 
                     b.Property<string>("BloodBankName")
                         .HasColumnType("nvarchar(max)");
@@ -38,14 +38,14 @@ namespace BloodBankManagementSystem.Migrations
                     b.Property<int>("BloodUnits")
                         .HasColumnType("int");
 
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ContactNumber")
                         .HasColumnType("int");
 
                     b.Property<int>("Password")
                         .HasColumnType("int");
-
-                    b.Property<string>("city")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
 
@@ -69,7 +69,6 @@ namespace BloodBankManagementSystem.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CampName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CampStartDate")
@@ -80,7 +79,7 @@ namespace BloodBankManagementSystem.Migrations
 
                     b.HasKey("BloodDonationCampID");
 
-                    b.ToTable("BloodDonationCamps");
+                    b.ToTable("BloodDonationCampstable");
                 });
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodDonor", b =>
@@ -185,7 +184,6 @@ namespace BloodBankManagementSystem.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HospitalName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("HospitalID");

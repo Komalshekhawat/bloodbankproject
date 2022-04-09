@@ -15,10 +15,10 @@ namespace BloodBankManagementSystem.Entities
         public int UserId { get; set; }
         public int Password { get; set; }
         public string BloodBankName { get; set; }
-        public string BloodBankId { get; set; }
+        public int BloodBankId { get; set; }
         public string Address { get; set; }
         public int ContactNumber { get; set; }
         public int BloodUnits { get; set; }
-        public string city { get; set; }
+        public string City { get; set; }
     }
 }

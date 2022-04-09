@@ -9,9 +9,9 @@ namespace BloodBankManagementSystem.Repositories
    public interface IBloodBankRepository
     {
         List<BloodBank> GetBloodBanks();
-        BloodBank GetBloodBank(string BloodBankName);
+       
         void AddBloodBank(BloodBank bloodBank);
-        void RemoveBloodBank(string BloodBankName);
+        void RemoveBloodBank(int UserId);
         void UpdateBloodBank(BloodBank bloodBank);
     }
 }

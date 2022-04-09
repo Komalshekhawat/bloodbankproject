@@ -11,13 +11,14 @@ blooddonationcamps:BloodDonationCamp[]
 blooddonationcamp:BloodDonationCamp;
   constructor( private BloodDonationCampService:BlooddonationcampService){
     this.blooddonationcamp=new BloodDonationCamp();
+    this.AddBloodDonationCamp();
   }
 
   ngOnInit(): void {
   }
   AddBloodDonationCamp(){
     this.BloodDonationCampService.AddBloodDonationCamp(this.blooddonationcamp).subscribe(res=>{
-    
+
 
     })
   }

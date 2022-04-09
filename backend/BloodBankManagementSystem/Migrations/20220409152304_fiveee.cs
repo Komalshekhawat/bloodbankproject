@@ -3,19 +3,19 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BloodBankManagementSystem.Migrations
 {
-    public partial class final : Migration
+    public partial class fiveee : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "BloodBank",
+                name: "BloodBanks",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    BloodBankId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
                     Password = table.Column<int>(type: "int", nullable: false),
                     BloodBankName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    BloodBankId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ContactNumber = table.Column<int>(type: "int", nullable: false),
                     BloodUnits = table.Column<int>(type: "int", nullable: false),
@@ -23,7 +23,7 @@ namespace BloodBankManagementSystem.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BloodBank", x => x.UserId);
+                    table.PrimaryKey("PK_BloodBanks", x => x.BloodBankId);
                 });
 
             migrationBuilder.CreateTable(
@@ -84,7 +84,7 @@ namespace BloodBankManagementSystem.Migrations
                 {
                     HospitalID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    HospitalName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HospitalName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     City = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ContactNo = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -126,7 +126,7 @@ namespace BloodBankManagementSystem.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "BloodBank");
+                name: "BloodBanks");
 
             migrationBuilder.DropTable(
                 name: "BloodDonationCamps");

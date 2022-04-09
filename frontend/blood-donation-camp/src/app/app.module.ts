@@ -11,14 +11,33 @@ import { AddblooddonationcampComponent } from './Components/addblooddonationcamp
 import { BlooddonationcampService } from './Services/blooddonationcamp.service';
 import { ViewallblooddonationcampsComponent } from './Components/viewallblooddonationcamps/viewallblooddonationcamps.component';
 import { BlooddonationcampmenuComponent } from './Components/blooddonationcampmenu/blooddonationcampmenu.component';
-import { EditblooddonationcampdetailsComponent } from './Components/editblooddonationcampdetails/editblooddonationcampdetails.component';
+import { GetblooddonationcampstartdateComponent } from './Components/getblooddonationcampstartdate/getblooddonationcampstartdate.component';
+import { UpdatecampdetailsComponent } from './Components/updatecampdetails/updatecampdetails.component';
+import { GethospitaldetailsComponent } from './Components/gethospitaldetails/gethospitaldetails.component';
+import { HospitalmenuComponent } from './Components/hospitalmenu/hospitalmenu.component';
+import { HomepageComponent } from './Components/homepage/homepage.component';
+import { AddhospitalComponent } from './Components/addhospital/addhospital.component';
+import { UpdatehospitalComponent } from './Components/updatehospital/updatehospital.component';
+import { DeletehospitalComponent } from './Components/deletehospital/deletehospital.component';
+import { GetbloodbanksComponent } from './Components/getbloodbanks/getbloodbanks.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ViewallblooddonationcampsComponent,
     AddblooddonationcampComponent,
     BlooddonationcampmenuComponent,
-    EditblooddonationcampdetailsComponent
+    GetblooddonationcampstartdateComponent,
+    UpdatecampdetailsComponent,
+    GethospitaldetailsComponent,
+    HospitalmenuComponent,
+    HomepageComponent,
+    AddhospitalComponent,
+    UpdatehospitalComponent,
+    DeletehospitalComponent,
+    GetbloodbanksComponent
+
 
   ],
   imports: [
@@ -26,8 +45,8 @@ import { EditblooddonationcampdetailsComponent } from './Components/editblooddon
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    CommonModule,
-    BrowserModule,
+    CommonModule
+
 
   ],
   providers: [BlooddonationcampService],

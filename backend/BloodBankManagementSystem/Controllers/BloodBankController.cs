@@ -54,6 +54,23 @@ namespace BloodBankManagementSystem.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpDelete]
+        [Route("RemoveBloodBank")]
+        public IActionResult RemoveBloodBank(int UserId)
+        {
+            try
+            {
+                _repository.RemoveBloodBank(UserId);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }
 

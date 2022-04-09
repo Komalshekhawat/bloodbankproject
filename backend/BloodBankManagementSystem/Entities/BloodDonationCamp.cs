@@ -7,15 +7,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BloodBankManagementSystem.Entities
 {
-    [Table("BloodDonationCamps")]
+    [Table("BloodDonationCampstable")]
     public class BloodDonationCamp
     {
         [Key]
         public int BloodDonationCampID { get; set; }
-        [Required]
+        
         public string CampName { get; set; }
         public string Adress { get; set; }
         public string City { get; set; }
+
+        
         public int BloodBankID { get; set; }
         public DateTime CampStartDate { get; set; }
         public DateTime CampEndDate { get; set; }

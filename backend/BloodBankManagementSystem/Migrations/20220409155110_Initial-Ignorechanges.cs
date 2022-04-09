@@ -2,7 +2,7 @@
 
 namespace BloodBankManagementSystem.Migrations
 {
-    public partial class c : Migration
+    public partial class InitialIgnorechanges : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

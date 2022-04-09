@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodBankManagementSystem.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20220407130333_final")]
-    partial class final
+    [Migration("20220409152304_fiveee")]
+    partial class fiveee
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,15 +23,12 @@ namespace BloodBankManagementSystem.Migrations
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodBank", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("BloodBankId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BloodBankId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BloodBankName")
@@ -46,12 +43,15 @@ namespace BloodBankManagementSystem.Migrations
                     b.Property<int>("Password")
                         .HasColumnType("int");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.Property<string>("city")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserId");
+                    b.HasKey("BloodBankId");
 
-                    b.ToTable("BloodBank");
+                    b.ToTable("BloodBanks");
                 });
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodDonationCamp", b =>
@@ -187,7 +187,6 @@ namespace BloodBankManagementSystem.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HospitalName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("HospitalID");

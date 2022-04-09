@@ -2,7 +2,7 @@
 
 namespace BloodBankManagementSystem.Migrations
 {
-    public partial class ab : Migration
+    public partial class Bloo : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

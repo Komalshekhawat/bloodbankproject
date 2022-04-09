@@ -1,0 +1,51 @@
+<p>updateblooddonationcamp works!</p>
+<div>
+  <table>
+    <tr>
+      <td>BloodDonationCampId</td>
+      <td><input type="text" name="" id="" [(ngModel)]="blooddonationcamp.bloodDonationCampId"></td>
+    </tr>
+
+    <tr>
+      <td>CampName</td>
+      <td><input type="text" name="" id="" [(ngModel)]="blooddonationcamp.campName"></td>
+    </tr>
+
+    <tr>
+      <td>Address</td>
+      <td><input type="text" name="" id="" [(ngModel)]="blooddonationcamp.adress"></td>
+    </tr>
+
+    <tr>
+      <td>City</td>
+      <td><input type="text" name="" id="" [(ngModel)]="blooddonationcamp.city"></td>
+    </tr>
+
+    <tr>
+      <td>BloodBankId</td>
+      <td><input type="text" name="" id="" [(ngModel)]="blooddonationcamp.bloodBankId"></td>
+    </tr>
+
+    <tr>
+      <td>BloodDonationCampStartDate</td>
+      <td><input type="date" name="" id="" [(ngModel)]="blooddonationcamp.campStartDate"></td>
+    </tr>
+
+    <tr>
+      <td>BloodDonationCampEndDate</td>
+      <td><input type="date" name="" id="" [(ngModel)]="blooddonationcamp.campEndDate"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button (click)="UpdateBloodDonationCamp()">EditBloodDonationCamp</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1">
+        {{errormsg}}
+      </td>
+    </tr>
+
+  </table>
+</div>
+

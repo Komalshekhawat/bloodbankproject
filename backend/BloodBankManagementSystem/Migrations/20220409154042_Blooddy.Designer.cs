@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodBankManagementSystem.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20220408111048_c")]
-    partial class c
+    [Migration("20220409154042_Blooddy")]
+    partial class Blooddy
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,15 +23,12 @@ namespace BloodBankManagementSystem.Migrations
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodBank", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("BloodBankId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BloodBankId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BloodBankName")
@@ -40,18 +37,21 @@ namespace BloodBankManagementSystem.Migrations
                     b.Property<int>("BloodUnits")
                         .HasColumnType("int");
 
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ContactNumber")
                         .HasColumnType("int");
 
                     b.Property<int>("Password")
                         .HasColumnType("int");
 
-                    b.Property<string>("city")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
-                    b.HasKey("UserId");
+                    b.HasKey("BloodBankId");
 
-                    b.ToTable("BloodBank");
+                    b.ToTable("BloodBanks");
                 });
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodDonationCamp", b =>
@@ -71,7 +71,6 @@ namespace BloodBankManagementSystem.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CampName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CampStartDate")
@@ -82,7 +81,7 @@ namespace BloodBankManagementSystem.Migrations
 
                     b.HasKey("BloodDonationCampID");
 
-                    b.ToTable("BloodDonationCamps");
+                    b.ToTable("BloodDonationCampstable");
                 });
 
             modelBuilder.Entity("BloodBankManagementSystem.Entities.BloodDonor", b =>
@@ -187,7 +186,6 @@ namespace BloodBankManagementSystem.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HospitalName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("HospitalID");
