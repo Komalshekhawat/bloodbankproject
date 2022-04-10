@@ -12,23 +12,20 @@ import { AddhospitalComponent } from './Components/addhospital/addhospital.compo
 import { UpdatehospitalComponent } from './Components/updatehospital/updatehospital.component';
 import { DeletehospitalComponent } from './Components/deletehospital/deletehospital.component';
 import { GetbloodbanksComponent } from './Components/getbloodbanks/getbloodbanks.component';
-<<<<<<< HEAD
 import { AddbloodbankComponent } from './Components/addbloodbank/addbloodbank.component';
 import { UpdatebloodbankComponent } from './Components/updatebloodbank/updatebloodbank.component';
 import { BloodbankmenuComponent } from './Components/bloodbankmenu/bloodbankmenu.component';
 import { LoginComponent } from './Components/login/login.component';
-
-=======
-import { BlooddonormenuComponent } from './Components/blooddonormenu/blooddonormenu.component';
-import { GetblooddonordetailsComponent } from './Components/getblooddonordetails/getblooddonordetails.component';
 import { AddblooddonordetailsComponent } from './Components/addblooddonordetails/addblooddonordetails.component';
-import { UpdateblooddonordetailsComponent } from './Components/updateblooddonordetails/updateblooddonordetails.component';
 import { DeleteblooddonordetailsComponent } from './Components/deleteblooddonordetails/deleteblooddonordetails.component';
+import { UpdateblooddonordetailsComponent } from './Components/updateblooddonordetails/updateblooddonordetails.component';
 import { AddblooddonordonationComponent } from './Components/addblooddonordonation/addblooddonordonation.component';
->>>>>>> 6f604d31e70803fae55b6ff55e0e450e122bd888
+import { GetblooddonordetailsComponent } from './Components/getblooddonordetails/getblooddonordetails.component';
+import { BlooddonormenuComponent } from './Components/blooddonormenu/blooddonormenu.component';
+
 //defining routes to the components
 const routes: Routes = [
-  
+
   {path:'addblooddonordonation',component:AddblooddonordonationComponent},
   {path:'deleteblooddonordetails',component:DeleteblooddonordetailsComponent},
   {path:'updateblooddonordetails',component:UpdateblooddonordetailsComponent},

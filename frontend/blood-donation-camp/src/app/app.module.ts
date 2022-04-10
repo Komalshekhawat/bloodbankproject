@@ -20,19 +20,21 @@ import { AddhospitalComponent } from './Components/addhospital/addhospital.compo
 import { UpdatehospitalComponent } from './Components/updatehospital/updatehospital.component';
 import { DeletehospitalComponent } from './Components/deletehospital/deletehospital.component';
 import { GetbloodbanksComponent } from './Components/getbloodbanks/getbloodbanks.component';
-<<<<<<< HEAD
 import { AddbloodbankComponent } from './Components/addbloodbank/addbloodbank.component';
 import { UpdatebloodbankComponent } from './Components/updatebloodbank/updatebloodbank.component';
 import { BloodbankmenuComponent } from './Components/bloodbankmenu/bloodbankmenu.component';
 import { LoginComponent } from './Components/login/login.component';
-=======
 import { BlooddonormenuComponent } from './Components/blooddonormenu/blooddonormenu.component';
 import { GetblooddonordetailsComponent } from './Components/getblooddonordetails/getblooddonordetails.component';
 import { AddblooddonordetailsComponent } from './Components/addblooddonordetails/addblooddonordetails.component';
 import { UpdateblooddonordetailsComponent } from './Components/updateblooddonordetails/updateblooddonordetails.component';
 import { DeleteblooddonordetailsComponent } from './Components/deleteblooddonordetails/deleteblooddonordetails.component';
 import { AddblooddonordonationComponent } from './Components/addblooddonordonation/addblooddonordonation.component';
->>>>>>> 6f604d31e70803fae55b6ff55e0e450e122bd888
+import { HospitalControllerService } from './Services/hospital-controller.service';
+import { BloodbankserviceService } from './Services/bloodbankservice.service';
+import { BlooddonorcontrollerService } from './Services/blooddonorcontroller.service';
+import { GetbloodinventoryComponent } from './Components/getbloodinventory/getbloodinventory.component';
+import { TransferbloodComponent } from './Components/transferblood/transferblood.component';
 
 
 @NgModule({
@@ -50,19 +52,18 @@ import { AddblooddonordonationComponent } from './Components/addblooddonordonati
     UpdatehospitalComponent,
     DeletehospitalComponent,
     GetbloodbanksComponent,
-<<<<<<< HEAD
     AddbloodbankComponent,
     UpdatebloodbankComponent,
     BloodbankmenuComponent,
-    LoginComponent
-=======
+    LoginComponent,
     BlooddonormenuComponent,
     GetblooddonordetailsComponent,
     AddblooddonordetailsComponent,
     UpdateblooddonordetailsComponent,
     DeleteblooddonordetailsComponent,
-    AddblooddonordonationComponent
->>>>>>> 6f604d31e70803fae55b6ff55e0e450e122bd888
+    AddblooddonordonationComponent,
+    GetbloodinventoryComponent,
+    TransferbloodComponent
 
 
   ],
@@ -75,7 +76,7 @@ import { AddblooddonordonationComponent } from './Components/addblooddonordonati
 
 
   ],
-  providers: [BlooddonationcampService],
+  providers: [BlooddonationcampService,HospitalControllerService,BloodbankserviceService,BlooddonorcontrollerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

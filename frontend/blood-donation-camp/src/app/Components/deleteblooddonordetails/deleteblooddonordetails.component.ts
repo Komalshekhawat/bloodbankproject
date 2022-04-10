@@ -10,21 +10,19 @@ export class DeleteblooddonordetailsComponent implements OnInit {
   blooddonors:BloodDonor[];
   blooddonor:BloodDonor;
   errMsg:string=''
-  constructor(private blooddonorcontrollerservice:BlooddonorcontrollerService) { 
-    this.DeleteBloodDonor();
+  constructor(private blooddonorcontrollerservice:BlooddonorcontrollerService) {
+    this.blooddonor=new BloodDonor();
+    this.RemoveBloodDonor();
   }
 
   ngOnInit(): void {
   }
-DeleteBloodDonor():void{
+  RemoveBloodDonor():void
+  {
   let id=this.blooddonor.bloodDonorId;
-  if(
-    this.blooddonorcontrollerservice.DeleteBloodDonor(id).subscribe(res=>{
+  this.blooddonorcontrollerservice.RemoveBloodDonor(id).subscribe(res=>{
 
-    })){
-      this.errMsg='deleted';
-    }
-    this.errMsg='not';
+    })
   }
 }
 

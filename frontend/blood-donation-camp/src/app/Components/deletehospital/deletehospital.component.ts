@@ -13,6 +13,8 @@ hospital:Hospital;
 errMsg:string=''
   constructor(private hospitalcontrollerservice:HospitalControllerService) {
     
+    this.hospital=new Hospital();
+
     this.RemoveHospitalDetails();
 
   }
@@ -22,17 +24,10 @@ errMsg:string=''
   RemoveHospitalDetails():void
   {
     let id=this.hospital.hospitalId;
-    if(
     this.hospitalcontrollerservice.RemoveHospitalDetails(id).subscribe(res=>{
       console.log(res);
 
-    })){
-      this.errMsg='deleted';
-    }
-    else{
-      this.errMsg='not';
-    }
-
+    })
   }
 
 }

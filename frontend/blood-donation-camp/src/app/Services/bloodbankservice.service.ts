@@ -14,7 +14,7 @@ export class BloodbankserviceService {
 
   constructor(private http:HttpClient) { }
   GetBloodBanks():Observable<BloodBank[]>{
-    return this.http.get<BloodBank[]>(this.bloodbank_api+'GetBloodBank')
+    return this.http.get<BloodBank[]>(this.bloodbank_api+'GetBloodBanks')
   }
   AddBloodBank(item:BloodBank):Observable<any>{
     return this.http.post<string>(this.bloodbank_api+'AddBloodBank',item);

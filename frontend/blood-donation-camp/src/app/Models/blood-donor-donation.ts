@@ -5,4 +5,6 @@ export class BloodDonorDonation {
     weight:number;
     hbCount:number;
     bloodDonorId:number;
+    bloodBankId:number;
+    bloodGroup:string;
 }

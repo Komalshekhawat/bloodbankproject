@@ -10,10 +10,9 @@ import { BloodbankserviceService } from 'src/app/Services/bloodbankservice.servi
 export class GetbloodbanksComponent implements OnInit {
 bloodbanks:BloodBank[];
 bloodbank:BloodBank;
-  constructor(private bloodbankservice:BloodbankserviceService) {
-    this.bloodbank=new BloodBank();
-    //add GetAllBloodDonationCamps() response to product array
-        this.bloodbankservice.GetBloodBanks().subscribe(response=>{
+  constructor(private bloodbankserviceservice:BloodbankserviceService) {
+        this.bloodbank=new BloodBank();
+        this.bloodbankserviceservice.GetBloodBanks().subscribe(response=>{
         this.bloodbanks=response;
 
         })
@@ -25,7 +24,7 @@ bloodbank:BloodBank;
   ngOnInit(): void {
   }
   GetBloodBanks(){
-    this.bloodbankservice.GetBloodBanks().subscribe(response=>{
+    this.bloodbankserviceservice.GetBloodBanks().subscribe(response=>{
       this.bloodbanks=response;
     })
 

@@ -8,10 +8,10 @@ import { BloodDonorDonation } from 'src/app/Models/blood-donor-donation';
   providedIn: 'root'
 })
 export class BlooddonorcontrollerService {
- 
+
   blood_donor_api=environment.blood_donor_api
   constructor(private http:HttpClient) { }
-  
+
   GetBloodDonors():Observable<BloodDonor[]>
   {
     return this.http.get<BloodDonor[]>(this.blood_donor_api+'GetBloodDonors')
@@ -24,12 +24,19 @@ export class BlooddonorcontrollerService {
   {
     return this.http.put(this.blood_donor_api+'UpdateBloodDonor',item);
   }
-  DeleteBloodDonor(bloodDonorId:number):Observable<any>
+  RemoveBloodDonor(bloodDonorId:number):Observable<any>
   {
-    return this.http.delete(this.blood_donor_api+'DeleteBloodDonor/'+bloodDonorId);
+    return this.http.delete(this.blood_donor_api+'RemoveBloodDonor/'+bloodDonorId);
   }
   AddBloodDonorDonation(item:BloodDonorDonation):Observable<any>
   {
-    return this.http.post(this.blood_donor_api+'AddBloodDonorDonation',item);
+    return this.http.post(this.blood_donor_api+'DonateBlood',item);
+  }
+  GetBloodInventory():Observable<BloodDonorDonation[]>{
+    return this.http.get<BloodDonorDonation[]>(this.blood_donor_api+'GetBloodInventory')
+  }
+  TransferBlood(id:number):Observable<any>
+  {
+    return this.http.put(this.blood_donor_api+'TransferBlood/',id);
   }
 }
