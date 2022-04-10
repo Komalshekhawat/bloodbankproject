@@ -20,6 +20,10 @@ import { AddhospitalComponent } from './Components/addhospital/addhospital.compo
 import { UpdatehospitalComponent } from './Components/updatehospital/updatehospital.component';
 import { DeletehospitalComponent } from './Components/deletehospital/deletehospital.component';
 import { GetbloodbanksComponent } from './Components/getbloodbanks/getbloodbanks.component';
+import { AddbloodbankComponent } from './Components/addbloodbank/addbloodbank.component';
+import { UpdatebloodbankComponent } from './Components/updatebloodbank/updatebloodbank.component';
+import { BloodbankmenuComponent } from './Components/bloodbankmenu/bloodbankmenu.component';
+import { LoginComponent } from './Components/login/login.component';
 
 
 @NgModule({
@@ -36,7 +40,11 @@ import { GetbloodbanksComponent } from './Components/getbloodbanks/getbloodbanks
     AddhospitalComponent,
     UpdatehospitalComponent,
     DeletehospitalComponent,
-    GetbloodbanksComponent
+    GetbloodbanksComponent,
+    AddbloodbankComponent,
+    UpdatebloodbankComponent,
+    BloodbankmenuComponent,
+    LoginComponent
 
 
   ],

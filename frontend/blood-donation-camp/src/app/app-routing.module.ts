@@ -12,14 +12,20 @@ import { AddhospitalComponent } from './Components/addhospital/addhospital.compo
 import { UpdatehospitalComponent } from './Components/updatehospital/updatehospital.component';
 import { DeletehospitalComponent } from './Components/deletehospital/deletehospital.component';
 import { GetbloodbanksComponent } from './Components/getbloodbanks/getbloodbanks.component';
+import { AddbloodbankComponent } from './Components/addbloodbank/addbloodbank.component';
+import { UpdatebloodbankComponent } from './Components/updatebloodbank/updatebloodbank.component';
+import { BloodbankmenuComponent } from './Components/bloodbankmenu/bloodbankmenu.component';
+import { LoginComponent } from './Components/login/login.component';
 
 //defining routes to the components
 const routes: Routes = [
 
 
 
-  {path:'viewbloddbanks',component:GetbloodbanksComponent},
-  
+  {path:'viewbloodbanks',component:GetbloodbanksComponent},
+  {path:'addbloodbank',component:AddbloodbankComponent},
+  {path:'updatebloodbank',component:UpdatebloodbankComponent},
+  {path:'bloodbankmenu',component:BloodbankmenuComponent},
 
   {path:'viewblooddonation',component:ViewallblooddonationcampsComponent},
   {path:'addblooddonation',component:AddblooddonationcampComponent},
@@ -33,7 +39,8 @@ const routes: Routes = [
   {path:'addhospital',component:AddhospitalComponent},
   {path:'hospitalmenu',component:HospitalmenuComponent},
 
-  {path:'',component:HomepageComponent}
+  {path:'homepage',component:HomepageComponent},
+  {path:'',component:LoginComponent}
 
 
 ];
