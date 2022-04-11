@@ -10,24 +10,29 @@ import { HomepageComponent } from './Components/homepage/homepage.component';
 import { HospitalmenuComponent } from './Components/hospitalmenu/hospitalmenu.component';
 import { AddhospitalComponent } from './Components/addhospital/addhospital.component';
 import { UpdatehospitalComponent } from './Components/updatehospital/updatehospital.component';
-import { DeletehospitalComponent } from './Components/deletehospital/deletehospital.component';
+
 import { GetbloodbanksComponent } from './Components/getbloodbanks/getbloodbanks.component';
 import { AddbloodbankComponent } from './Components/addbloodbank/addbloodbank.component';
 import { UpdatebloodbankComponent } from './Components/updatebloodbank/updatebloodbank.component';
 import { BloodbankmenuComponent } from './Components/bloodbankmenu/bloodbankmenu.component';
 import { LoginComponent } from './Components/login/login.component';
 import { AddblooddonordetailsComponent } from './Components/addblooddonordetails/addblooddonordetails.component';
-import { DeleteblooddonordetailsComponent } from './Components/deleteblooddonordetails/deleteblooddonordetails.component';
+
 import { UpdateblooddonordetailsComponent } from './Components/updateblooddonordetails/updateblooddonordetails.component';
 import { AddblooddonordonationComponent } from './Components/addblooddonordonation/addblooddonordonation.component';
 import { GetblooddonordetailsComponent } from './Components/getblooddonordetails/getblooddonordetails.component';
 import { BlooddonormenuComponent } from './Components/blooddonormenu/blooddonormenu.component';
+import { GetbloodinventoryComponent } from './Components/getbloodinventory/getbloodinventory.component';
+import { TransferbloodComponent } from './Components/transferblood/transferblood.component';
+import { SearchbloodComponent } from './Components/searchblood/searchblood.component';
 
 //defining routes to the components
 const routes: Routes = [
-
+  {path:'viewbloodinventory',component:GetbloodinventoryComponent},
+  {path:'transferblood',component:TransferbloodComponent},
   {path:'addblooddonordonation',component:AddblooddonordonationComponent},
-  {path:'deleteblooddonordetails',component:DeleteblooddonordetailsComponent},
+  {path:'searchblood',component:SearchbloodComponent},
+
   {path:'updateblooddonordetails',component:UpdateblooddonordetailsComponent},
   {path:'addblooddonordetails',component:AddblooddonordetailsComponent},
   {path:'getblooddonordetails',component:GetblooddonordetailsComponent},
@@ -44,7 +49,7 @@ const routes: Routes = [
   {path:'updateblooddonation',component:UpdatecampdetailsComponent},
   {path:'blooddonationcampmenu',component:BlooddonationcampmenuComponent},
 
-  {path:'deletehospital',component:DeletehospitalComponent},
+
   {path:'updatehospital',component:UpdatehospitalComponent},
   {path:'viewhospital',component:GethospitaldetailsComponent},
   {path:'addhospital',component:AddhospitalComponent},

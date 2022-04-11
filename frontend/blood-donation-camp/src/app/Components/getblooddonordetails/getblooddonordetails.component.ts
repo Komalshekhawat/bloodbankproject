@@ -10,11 +10,11 @@ export class GetblooddonordetailsComponent implements OnInit {
   blooddonors:BloodDonor[];
   blooddonor:BloodDonor;
 
-  constructor(private blooddonorcontrollerservice:BlooddonorcontrollerService) { 
+  constructor(private blooddonorcontrollerservice:BlooddonorcontrollerService) {
   this.blooddonor=new BloodDonor();
   this.blooddonorcontrollerservice.GetBloodDonors().subscribe(response=>{
   this.blooddonors=response;
-  
+
   })
   this.GetBloodDonorDetails();
   }
@@ -26,6 +26,12 @@ export class GetblooddonordetailsComponent implements OnInit {
       this.blooddonors=response;
     })
   }
+  RemoveBloodDonor(id:number){
+    this.blooddonorcontrollerservice.RemoveBloodDonor(id).subscribe(response=>{
+
+
+    })
+
+  }
 
 }
- 

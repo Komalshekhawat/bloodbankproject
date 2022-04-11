@@ -15,6 +15,7 @@ export class GethospitaldetailsComponent implements OnInit {
     //add GetAllBloodDonationCamps() response to product array
         this.hospitalcontrollerservice.GetHospitalDetails().subscribe(response=>{
         this.hospitals=response;
+        console.log(this.hospitals);
 
         })
         this.GetHospitalDetails();
@@ -28,6 +29,16 @@ export class GethospitaldetailsComponent implements OnInit {
     this.hospitalcontrollerservice.GetHospitalDetails().subscribe(response=>{
       this.hospitals=response;
     })
+
+  }
+  DeleteHospitalDetails(id:number){
+    this.hospitalcontrollerservice.RemoveHospitalDetails(id).subscribe(response=>{
+      
+
+    })
+
+  }
+  UpdateHospitalDetails(){
 
   }
 

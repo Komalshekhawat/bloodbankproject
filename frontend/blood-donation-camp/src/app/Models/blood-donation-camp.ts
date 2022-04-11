@@ -1,9 +1,9 @@
 export class BloodDonationCamp {
-  bloodDonationCampId:number;
+  bloodDonationCampID:number;
   campName:string
   adress:string
   city:string
-  bloodBankId:number;
+  bloodBankID:number;
   campStartDate:Date;
   campEndDate:Date;
 }

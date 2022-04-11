@@ -20,7 +20,7 @@ blooddonordonation:BloodDonorDonation;
   }
   TransferBlood():void
   {
-    let id=this.blooddonordonation.bloodDonationId;
+    let id=this.blooddonordonation.bloodDonationID;
     this.blooddonorcontrollerservice.TransferBlood(id).subscribe(res=>{
       console.log(res);
 

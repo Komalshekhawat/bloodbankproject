@@ -1,5 +1,5 @@
 export class BloodDonor {
-    bloodDonorId:number;
+    bloodDonorID:number;
     firstName:string;
     lastName:string;
     address:string;

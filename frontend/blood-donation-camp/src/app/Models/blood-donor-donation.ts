@@ -1,10 +1,10 @@
 export class BloodDonorDonation {
-    bloodDonationId:number;
+    bloodDonationID:number;
     bloodDonationDate:Date;
-    numberOfBottles:number;
+    numberofBottles:number;
     weight:number;
     hbCount:number;
-    bloodDonorId:number;
-    bloodBankId:number;
+    bloodDonorID:number;
+    bloodBankID:number;
     bloodGroup:string;
 }

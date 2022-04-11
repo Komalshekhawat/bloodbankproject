@@ -1,8 +1,8 @@
 export class BloodBank {
-  userId:number;
+  userID:number;
   password:number;
   bloodBankName:string;
-  bloodBankId:string;
+  bloodBankID:string;
   address:string;
   city:string;
   contactNumber:string;

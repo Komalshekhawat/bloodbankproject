@@ -1,5 +1,5 @@
 export class Hospital {
-  hospitalId:number;
+  hospitalID:number;
   hospitalName:string;
   address:string;
   city:string;

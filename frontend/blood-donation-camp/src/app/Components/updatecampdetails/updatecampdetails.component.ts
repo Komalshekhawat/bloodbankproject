@@ -8,7 +8,7 @@ import { BlooddonationcampService } from 'src/app/Services/blooddonationcamp.ser
   styleUrls: ['./updatecampdetails.component.css']
 })
 export class UpdatecampdetailsComponent implements OnInit {
-errormsg:string=''
+
 date:Date=new Date(2022,4,9)
 blooddonationcamps:BloodDonationCamp[];
 blooddonationcamp:BloodDonationCamp;
@@ -26,7 +26,7 @@ blooddonationcamp:BloodDonationCamp;
 
 
     })
-    this.errormsg='updated successfully';
+
   }
 
 
